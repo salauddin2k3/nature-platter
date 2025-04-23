@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CDN: Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link: Font; Poppins & Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Link: Tailwind Css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="container mx-auto border-2 border-blue-700 font-poppins text-[#111]">
+    <header class="hero-bg">
+        <div  class="mx-36 mt-6">
+            <!-- Navbar -->
+            <nav class="flex justify-between items-center">
+                <div class="">
+                    <h5><img class="w-36" src="/Assets/logo-header.png" alt=""></h5>
+                </div>
+                <div class="flex justify-between items-center gap-28">
+                    <div>
+                        <ul class="flex gap-8 text-xl items-center">
+                            <li>Product</li>
+                            <li>Services</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex gap-8 text-xl items-center">
+                            <li>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                        fill="none">
+                                        <path
+                                            d="M23.739 22.325L17.77 16.356C19.3966 14.3666 20.1964 11.8281 20.0039 9.26557C19.8113 6.70304 18.6412 4.31254 16.7356 2.58853C14.83 0.864519 12.3346 -0.0610992 9.76565 0.00313259C7.1967 0.0673644 4.75071 1.11653 2.93362 2.93362C1.11653 4.75071 0.0673644 7.1967 0.00313259 9.76565C-0.0610992 12.3346 0.864519 14.83 2.58853 16.7356C4.31254 18.6412 6.70304 19.8113 9.26557 20.0039C11.8281 20.1964 14.3666 19.3966 16.356 17.77L22.325 23.739C22.5136 23.9212 22.7662 24.022 23.0284 24.0197C23.2906 24.0174 23.5414 23.9122 23.7268 23.7268C23.9122 23.5414 24.0174 23.2906 24.0197 23.0284C24.022 22.7662 23.9212 22.5136 23.739 22.325ZM10.032 18.032C8.44976 18.032 6.90304 17.5628 5.58745 16.6838C4.27185 15.8047 3.24647 14.5553 2.64097 13.0935C2.03547 11.6317 1.87704 10.0231 2.18573 8.47129C2.49441 6.91944 3.25633 5.49397 4.37515 4.37515C5.49397 3.25633 6.91944 2.49441 8.47129 2.18573C10.0231 1.87704 11.6317 2.03547 13.0935 2.64097C14.5553 3.24647 15.8047 4.27185 16.6838 5.58745C17.5628 6.90304 18.032 8.44976 18.032 10.032C18.0296 12.153 17.186 14.1865 15.6862 15.6862C14.1865 17.186 12.153 18.0296 10.032 18.032Z"
+                                            fill="black" />
+                                    </svg></p>
+                            </li>
+                            <li>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24"
+                                        fill="none">
+                                        <path
+                                            d="M22.2231 4.78782H22.3112L20.7883 8.94168H7.54328C5.59011 8.94168 4.18301 10.8156 4.72779 12.6912L5.32459 14.746L3.67878 14.52L3.67879 14.52L3.67089 14.519C2.82923 14.4125 2.14916 13.7809 1.98099 12.9492L0.80993 7.15693C0.562336 5.93227 1.49856 4.78782 2.748 4.78782H22.2231Z"
+                                            stroke="#111111" stroke-width="1.5" />
+                                        <path
+                                            d="M19.8383 11.5326L18.1974 16.0081L18.0209 16.4894L8.13463 15.1319L7.21586 11.9686L7.21586 11.9686C7.15251 11.7505 7.31612 11.5326 7.54325 11.5326H19.8383ZM17.0571 20.3962H18.7099L19.1242 21.1126C19.2457 21.3226 19.3154 21.5661 19.3154 21.828C19.3154 22.6188 18.6743 23.2599 17.8836 23.2599C17.0928 23.2599 16.4518 22.6188 16.4518 21.828C16.4518 21.5661 16.5214 21.3226 16.6429 21.1126L17.0571 20.3962ZM3.72772 20.3962H4.55417L4.9684 21.1126C5.08984 21.3226 5.15953 21.5661 5.15953 21.828C5.15953 22.6188 4.51848 23.2599 3.72772 23.2599C2.93696 23.2599 2.2959 22.6188 2.2959 21.828C2.2959 21.0373 2.93694 20.3962 3.72772 20.3962Z"
+                                            stroke="#111111" stroke-width="1.5" />
+                                    </svg></p>
+                            </li>
+                            <li
+                                class="border-2 px-7 py-2 rounded-lg border-[#179800] hover:text-white hover:bg-[#179800]">
+                                <a href="#">Login</a>
+                            </li>
+                            <li
+                                class="border-2 px-7 py-2 text-white rounded-lg bg-[#179800] hover:border-[#179800] hover:text-[#179800] hover:bg-white">
+                                <a href="#">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Banner -->
+            <section class="mt-28 flex flex-col items-center">
+                <h2 class="text-center font-sora text-5xl font-semibold leading-tight">Freshness <span
+                        class="primary-color">You Can <br>
+                        Count</span> On, Prices You’ll Love!</h2>
+                <p class="text-center text-xl font-normal mt-8">Shop your daily essentials at unbeatable prices. From
+                    fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+                <img class="w-3/4 mt-9" src="/Assets/hero-vegetables.png" alt="">
+            </section>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <h2>Main Section</h2>
+    </main>
+
+    <!-- Footer     -->
+    <footer>
+
+    </footer>
+
+
+    <!-- border-2 border-red-400 -->
+    
+    
+</body>
+
+</html>
